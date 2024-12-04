@@ -18,8 +18,7 @@ namespace Service
         {
             try
             {
-                var companies =
-                _repository.CompanyRepository.GetAllCompanies(trackChanges);
+                var companies = _repository.CompanyRepository.GetAllCompanies(trackChanges);
                 return companies;
             }
             catch (Exception ex)
